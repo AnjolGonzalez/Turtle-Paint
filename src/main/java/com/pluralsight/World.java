@@ -18,34 +18,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-/**
- * Source: https://codehs.com/sandbox/apcsa/java-turtle
- *
- * A world for turtles to play inside of.
- * Usage example:
- * <pre>
- * com.pluralsight.World basic = new com.pluralsight.World();
- * com.pluralsight.World fancy = new com.pluralsight.World(640, 480, Color.YELLOW);
- *
- * com.pluralsight.Turtle t1 = new com.pluralsight.Turtle(basic);
- * com.pluralsight.Turtle t2 = new com.pluralsight.Turtle(fancy);
- *
- * t1.forward(100);
- * basic.erase();
- * t1.turnLeft(90);
- * t1.forward(100);
- *
- * t2.forward(100);
- * t2.turnLeft(90);
- * t2.forward(100);
- *
- * basic.saveAs("basicWorld.png");
- * fancy.saveAs("fancyWorld.png");
- * </pre>
- *
- *
- * @author Luther Tychonievich. Released to the public domain.
- */
+
 public class World extends JFrame {
     /// version number based on date of creation
     private static final long serialVersionUID = 20130902L;
