@@ -60,14 +60,16 @@ public class World extends JFrame {
 
 
     /**
-     * Creates a new com.pluralsight.World for Turtles to play in.
+     World for Turtles to play in.
      */
     public World() {
         this(600, 600);
     }
+
     public World(int width, int height) {
         this(width, height, Color.WHITE);
     }
+
     public World(int width, int height, Color backgroundColor) {
         super("com.pluralsight.Turtle com.pluralsight.World");
         this.centerX = width/2;

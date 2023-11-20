@@ -1,2 +1,4 @@
-package com.pluralsight;public class Circle {
+package com.pluralsight;
+
+public class Circle {
 }

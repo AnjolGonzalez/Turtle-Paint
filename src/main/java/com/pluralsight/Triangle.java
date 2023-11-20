@@ -1,2 +1,4 @@
-package com.pluralsight;public class Triangle {
+package com.pluralsight;
+
+public class Triangle {
 }
