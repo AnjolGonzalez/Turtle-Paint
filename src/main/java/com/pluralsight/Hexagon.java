@@ -14,8 +14,8 @@ public class Hexagon extends Shape {
 
         double angleDegree = 60;
         double angleRadians = Math.toRadians(angleDegree);
-        int[] xPoints = new int[125];
-        int[] yPoints = new int[125];
+        int[] xPoints = new int[0];
+        int[] yPoints = new int[0];
 
         for (int i = 0; i < 6; i++) {
             xPoints[i] = (int) (centerX + sideLength * Math.cos(i * angleRadians));
