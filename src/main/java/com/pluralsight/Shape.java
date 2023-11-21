@@ -20,8 +20,8 @@ public abstract class Shape {
     protected void setTurtleProperties() {
         turtle.penUp();
         turtle.penDown();
-        turtle.goTo(location.getX(), location.getY());
         turtle.setColor(color);
         turtle.setPenWidth(border);
+        turtle.goTo(location.getX(), location.getY());
     }
 }

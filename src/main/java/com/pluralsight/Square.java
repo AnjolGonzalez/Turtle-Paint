@@ -12,8 +12,8 @@ public class Square extends Shape{
         setTurtleProperties();
 
         for (int i = 0; i < 4; i++) {
-            turtle.forward();
-            turtle.turnRight(45);
+            turtle.forward(50);
+            turtle.turnRight(90);
         }
     }
 

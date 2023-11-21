@@ -1,4 +1,5 @@
 package com.pluralsight;
+
 import java.awt.*;
 
 public class Triangle extends Shape{
@@ -7,12 +8,15 @@ public class Triangle extends Shape{
         super(turtle, location, color, border);
     }
 
+
+
     public void paint() {
         setTurtleProperties();
 
         for (int i = 0; i < 3; i++) {
             turtle.forward(100);
             turtle.turnRight(120);
-        }    }
+        }
+    }
 
 }
