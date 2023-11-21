@@ -54,7 +54,7 @@ public class MainApp {
                     borderColor = getColor(tempColor);
 
                     System.out.println("What is the location of the shape(x,y)?");
-                    location = readFromUserInput(scan);
+                    location = userInput(scan);
                     scan.nextLine();
 
                     if (chosenShape == 2) {
@@ -116,7 +116,7 @@ public class MainApp {
             }
         }
 
-        private static Point readFromUserInput(Scanner scan) {
+        private static Point userInput(Scanner scan) {
             System.out.println("Enter the x-coordinate: ");
             int x = scan.nextInt();
             System.out.println("Enter the y-coordinate: ");
