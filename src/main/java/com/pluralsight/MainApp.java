@@ -39,7 +39,7 @@ public class MainApp {
                     Color borderColor;
                     double radius = 0;
 
-                    System.out.println("Which shape (1. Square, 2. Circle, 3. Triangle)?");
+                    System.out.println("Which shape (1. Square, 2. Circle, 3. Triangle, 4. Hexagon)?");
                     chosenShape = scan.nextInt();
                     if (chosenShape == 2) {
                         System.out.println("What is the radius?");
@@ -51,7 +51,7 @@ public class MainApp {
                     System.out.println("What is the border color?");
                     tempColor = scan.next().toLowerCase();
 
-                    borderColor = Color.getColor(tempColor);
+                    borderColor = getColor(tempColor);
 
                     System.out.println("What is the location of the shape(x,y)?");
                     location = readFromUserInput(scan);
@@ -75,6 +75,11 @@ public class MainApp {
                             triangle.paint();
                             break;
                         }
+                        case 4: {
+                            Hexagon hexagon = new Hexagon(turtle, location, borderColor, borderWidth);
+                            hexagon.paint();
+                            break;
+                        }
                     }
                     break;
                 }
@@ -93,8 +98,10 @@ public class MainApp {
         public static Color getColor(String color) {
 
             switch (color) {
+                case "red":
+                    return Color.RED;
                 case "green":
-                    return Color.WHITE;
+                    return Color.GREEN;
                 case "blue":
                     return Color.BLUE;
                 case "cyan":
